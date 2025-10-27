@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - AccessX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <custom-navbar></custom-navbar>
+    
+    <main class="pt-20 min-h-screen">
+        <!-- Shop Header -->
+        <section class="py-20 bg-gradient-to-br from-green-900/20 to-blue-900/20">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h1 class="text-5xl font-bold mb-6">AccessX <span class="text-green-400">Shop</span></h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Premium products and services for serious advertisers. Instant delivery, guaranteed quality.
+                </p>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 1 -->
+                    <div class="bg-gray-800 rounded-2xl p-6 border border-cyan-500/30 hover:border-cyan-500 transition-all">
+                        <div class="w-16 h-16 bg-cyan-500/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-feather="shield" class="w-8 h-8 text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Basic Ad Account</h3>
+                        <p class="text-gray-400 mb-4">Reliable advertising account with unlimited daily spend limit</p>
+                        <div class="text-3xl font-bold text-cyan-400 mb-6">$500</div>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 Profile</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 BM</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 Virtual Machine</span>
+                            </li>
+							<li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1  Agency ad account&nbsp;</span>
+                            </li>
+							<li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>Unlimited replacements&nbsp;</span>
+                            </li>
+							
+                        </ul>
+                        <button class="w-full bg-cyan-500 text-white py-3 rounded-full font-semibold hover:bg-cyan-600 transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="bg-gray-800 rounded-2xl p-6 border border-purple-500/30 hover:border-purple-500 transition-all">
+                        <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-feather="star" class="w-8 h-8 text-purple-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Pro Ad Account</h3>
+                        <p class="text-gray-400 mb-4">Premium account with $2000 daily spend and enhanced features</p>
+                        <div class="text-3xl font-bold text-purple-400 mb-6">$900</div>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 Profile</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 BM</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 Virtual Machine&nbsp;</span>
+                            </li>
+							<li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>2 Agency ad accounts&nbsp;</span>
+                            </li>
+							<li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>Unlimited replacements</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-purple-500 text-white py-3 rounded-full font-semibold hover:bg-purple-600 transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="bg-gray-800 rounded-2xl p-6 border border-red-500/30 hover:border-red-500 transition-all">
+                        <div class="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-feather="award" class="w-8 h-8 text-red-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Enterprise Account</h3>
+                        <p class="text-gray-400 mb-4">Unlimited spending power with maximum security and support</p>
+                        <div class="text-3xl font-bold text-red-400 mb-6">$2000</div>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 Profile</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 BM&nbsp;</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>1 Virutal Machine</span>
+                            </li>
+							<li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>5 Agency ad accounts&nbsp;</span>
+                            </li>
+							<li class="flex items-center gap-2 text-gray-300">
+                                <i data-feather="check" class="w-4 h-4 text-green-400"></i>
+                                <span>Unlimited replacements&nbsp;</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-red-500 text-white py-3 rounded-full font-semibold hover:bg-red-600 transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

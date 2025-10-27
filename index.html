@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessX - MetaVerse Ad Dominance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section with Vanta.js Background -->
+    <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0" id="vanta-bg"></div>
+        <div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-600">
+                DOMINATE META ADS
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">Advanced solutions for unlimited advertising power</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-3 rounded-full font-semibold hover:shadow-2xl hover:shadow-cyan-500/30 transition-all duration-300">
+                    Explore Services
+                </a>
+                <a href="#contact" class="border border-cyan-500 px-8 py-3 rounded-full font-semibold hover:bg-cyan-500/10 transition-all duration-300">
+                    Get Started
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-feather="chevron-down" class="w-8 h-8 text-cyan-400"></i>
+        </div>
+    </section>
+    <!-- Video Section -->
+    <section class="py-16 px-4 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to <span class="text-cyan-400">SCALE?</span></h2>
+            <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-2xl overflow-hidden shadow-2xl">
+                <video 
+                    class="w-full h-full object-cover" 
+                    poster="http://static.photos/technology/1024x576/7" 
+                    controls
+                >
+                    <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="text-gray-300 mt-6 text-lg">
+                See how AccessX helps businesses achieve unprecedented results with Meta advertising
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4">
+<div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">OUR <span class="text-cyan-400">POWERFUL</span> SOLUTIONS</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Meta Ad Solutions -->
+                <div class="bg-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300 border border-gray-700">
+                    <div class="w-16 h-16 bg-cyan-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-feather="bar-chart-2" class="w-8 h-8 text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Meta Ad Solutions</h3>
+                    <p class="text-gray-400 mb-4">Advanced advertising strategies that outperform competitors</p>
+                    <a href="services.html#meta-ads" class="text-cyan-400 hover:text-cyan-300 flex items-center gap-2">
+                        Learn more <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Facebook Unbans -->
+                <div class="bg-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-700">
+                    <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-feather="unlock" class="w-8 h-8 text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Facebook Unbans</h3>
+                    <p class="text-gray-400 mb-4">Professional account recovery services with 95% success rate</p>
+                    <a href="services.html#unbans" class="text-purple-400 hover:text-purple-300 flex items-center gap-2">
+                        Learn more <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Competitor Spy -->
+                <div class="bg-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-300 border border-gray-700">
+                    <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-feather="eye" class="w-8 h-8 text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Competitor Spy</h3>
+                    <p class="text-gray-400 mb-4">See exactly what your competitors are running and spending</p>
+                    <a href="services.html#spy" class="text-green-400 hover:text-green-300 flex items-center gap-2">
+                        Learn more <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Black Hat Accounts -->
+                <div class="bg-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300 border border-gray-700">
+                    <div class="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-feather="shield" class="w-8 h-8 text-red-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Black Hat Accounts</h3>
+                    <p class="text-gray-400 mb-4">Premium advertising accounts with unlimited spending power</p>
+                    <a href="services.html#accounts" class="text-red-400 hover:text-red-300 flex items-center gap-2">
+                        Learn more <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2" id="stat1">0</div>
+                    <div class="text-gray-400">Successful Unbans</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-purple-400 mb-2" id="stat2">0</div>
+                    <div class="text-gray-400">Active Accounts</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-green-400 mb-2" id="stat3">0</div>
+                    <div class="text-gray-400">Campaigns Monitored</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-red-400 mb-2" id="stat4">0</div>
+                    <div class="text-gray-400">Ad Spend Managed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">READY TO <span class="text-cyan-400">DOMINATE</span>?</h2>
+            <p class="text-xl text-gray-400 mb-12">Join hundreds of successful marketers who trust AccessX for their advertising needs</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-2xl p-8 border border-cyan-500/30">
+                    <i data-feather="message-circle" class="w-12 h-12 text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Get Consultation</h3>
+                    <p class="text-gray-400 mb-6">Speak with our experts about your specific needs</p>
+                    <a href="contact.html" class="bg-cyan-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-600 transition-colors">
+                        Contact Us
+                    </a>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl p-8 border border-purple-500/30">
+                    <i data-feather="shopping-cart" class="w-12 h-12 text-purple-400 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Instant Access</h3>
+                    <p class="text-gray-400 mb-6">Purchase our services directly through our secure portal</p>
+                    <a href="shop.html" class="bg-purple-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-600 transition-colors">
+                        Visit Shop
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Initialize Vanta.js background
+        document.addEventListener('DOMContentLoaded', function() {
+            VANTA.NET({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x0ea5e9,
+                backgroundColor: 0x111827,
+                points: 12.00,
+                maxDistance: 25.00,
+                spacing: 18.00
+            });
+        });
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>

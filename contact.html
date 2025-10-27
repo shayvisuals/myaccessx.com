@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AccessX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <custom-navbar></custom-navbar>
+    
+    <main class="pt-20 min-h-screen">
+        <!-- Contact Header -->
+        <section class="py-20 bg-gradient-to-br from-cyan-900/20 to-teal-900/20">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h1 class="text-5xl font-bold mb-6">Get in <span class="text-cyan-400">Touch</span></h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Ready to elevate your advertising game? Let's discuss how AccessX can help you achieve your goals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-cyan-500/30">
+                        <h2 class="text-3xl font-bold mb-6">Send us a Message</h2>
+                       <form id="contactForm" class="space-y-6">
+    <div class="grid md:grid-cols-2 gap-4">
+        <div>
+            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+            <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="Your name">
+        </div>
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+            <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="your@email.com">
+        </div>
+    </div>
+    <div>
+        <label for="service" class="block text-sm font-medium text-gray-300 mb-2">Service</label>
+        <select id="service" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+            <option value="">Select a service</option>
+            <option value="meta-ads">Meta Ad Solutions</option>
+            <option value="unbans">Facebook Unbans</option>
+            <option value="spy">Competitor Spy</option>
+            <option value="accounts">Black Hat Accounts</option>
+        </select>
+    </div>
+    <div>
+        <label for="platform" class="block text-sm font-medium text-gray-300 mb-2">Preferred IM Platform</label>
+        <select id="platform" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+            <option value="">Select platform</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="telegram">Telegram</option>
+        </select>
+    </div>
+    <div>
+        <label for="im-handle" class="block text-sm font-medium text-gray-300 mb-2">IM Number/Handle</label>
+        <input type="text" id="im-handle" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="Your WhatsApp number or Telegram handle">
+    </div>
+    <div>
+        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+        <textarea id="message" rows="5" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="Tell us about your project..."></textarea>
+    </div>
+    <button type="submit" class="w-full bg-cyan-500 text-white py-3 rounded-lg font-semibold hover:bg-cyan-600 transition-colors">
+        Send Message
+    </button>
+</form>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        service: document.getElementById('service').value,
+        platform: document.getElementById('platform').value,
+        imHandle: document.getElementById('im-handle').value,
+        message: document.getElementById('message').value
+    };
+
+    fetch('https://script.google.com/a/macros/shayvisuals.net/s/AKfycbxTBSX_vIjo0hnbuYaZdAhUOh4K94F1rk0lYVoKHwH3OIDHjdCECKVSMWXBfJrGgEa9Qw/exec', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => response.text()).then(response => {
+        alert('Message sent successfully!'); // Customize message
+    }).catch(error => console.error('Error!', error.message));
+});
+</script>
+
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center">
+                                        <i data-feather="mail" class="w-6 h-6 text-cyan-400"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400">Email</p>
+                                        <p class="text-white">support@accessx.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center">
+                                        <i data-feather="clock" class="w-6 h-6 text-cyan-400"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400">Response Time</p>
+                                        <p class="text-white">Within 24 hours</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center">
+                                        <i data-feather="globe" class="w-6 h-6 text-cyan-400"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400">Availability</p>
+                                        <p class="text-white">24/7 Support</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Quick Answers</h3>
+                            <div class="space-y-4">
+                                <details class="bg-gray-800 rounded-lg p-4">
+                                    <summary class="font-semibold cursor-pointer">How quickly can you recover a banned account?</summary>
+                                    <p class="text-gray-300 mt-2">Most accounts are recovered within 24-48 hours with our premium service.</p>
+                                </details>
+                                <details class="bg-gray-800 rounded-lg p-4">
+                                    <summary class="font-semibold cursor-pointer">Do you offer refunds?</summary>
+                                    <p class="text-gray-300 mt-2">Yes, we offer money-back guarantees on most of our services if we cannot deliver as promised.</p>
+                                </details>
+                                <details class="bg-gray-800 rounded-lg p-4">
+                                    <summary class="font-semibold cursor-pointer">Is your service confidential?</summary>
+                                    <p class="text-gray-300 mt-2">Absolutely. We maintain strict confidentiality and never share client information.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
